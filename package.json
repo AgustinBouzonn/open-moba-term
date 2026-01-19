@@ -22,7 +22,7 @@
     "dist:dir": "tsc && vite build && electron-builder --dir",
     "preview": "vite preview",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "postinstall": "electron-builder install-app-deps"
+    "postinstall": "patch-package && electron-builder install-app-deps"
   },
   "keywords": [
     "electron",
@@ -67,6 +67,7 @@
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "patch-package": "^8.0.1",
     "tree-kill": "^1.2.2",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
