@@ -1,7 +1,7 @@
 {
   "name": "openmoba",
   "productName": "OpenMoba",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "High-performance multiprotocol session manager for SSH, SFTP, VNC, and RDP",
   "homepage": "https://github.com/agustinbouzonn/open-moba-term",
   "repository": {
