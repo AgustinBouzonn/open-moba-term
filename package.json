@@ -32,7 +32,10 @@
     "rdp",
     "vnc"
   ],
-  "author": "Agustin",
+  "author": {
+    "name": "Agustin",
+    "email": "agustin@openmoba.com"
+  },
   "license": "GPL-3.0",
   "dependencies": {
     "@electron-toolkit/utils": "^4.0.0",
