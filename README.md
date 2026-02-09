@@ -22,6 +22,10 @@
 [![GitHub release](https://img.shields.io/github/release/AgustinBouzonn/open-moba-term.svg)](https://github.com/AgustinBouzonn/open-moba-term/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-win%20%7C%20mac%20%7C%20linux-lightgrey)](https://github.com/AgustinBouzonn/open-moba-term/releases)
 [![Built with Electron](https://img.shields.io/badge/built%20with-Electron-orange)](https://www.electronjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/AgustinBouzonn/open-moba-term)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)](https://github.com/AgustinBouzonn/open-moba-term)
+[![Stars](https://img.shields.io/github/stars/AgustinBouzonn/open-moba-term?style=flat-square)](https://github.com/AgustinBouzonn/open-moba-term)
+[![Downloads](https://img.shields.io/github/downloads/AgustinBouzonn/open-moba-term/total?style=flat-square)](https://github.com/AgustinBouzonn/open-moba-term/releases)
 
 </div>
 
