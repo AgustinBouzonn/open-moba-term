@@ -5,7 +5,7 @@
 If you discover a security vulnerability in OpenMoba, please report it by:
 
 1. **DO NOT** open a public issue
-2. Email the maintainer at: [YOUR_EMAIL]
+2. Report it privately through [GitHub Security Advisories](https://github.com/AgustinBouzonn/open-moba-term/security/advisories/new)
 3. Include:
    - Description of the vulnerability
    - Steps to reproduce

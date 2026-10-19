@@ -15,7 +15,7 @@ export default defineConfig({
                     build: {
                         outDir: 'dist-electron',
                         rollupOptions: {
-                            external: ['electron', 'path', 'fs', 'node:path', 'node:fs', 'node-pty', 'ssh2', 'keytar', 'electron-store'],
+                            external: ['electron', 'path', 'fs', 'node:path', 'node:fs', 'ssh2', 'keytar', 'electron-store'],
                             input: {
                                 index: path.resolve(__dirname, 'src/main/index.ts'),
                                 worker: path.resolve(__dirname, 'src/worker/index.ts'),
