@@ -116,10 +116,10 @@ npm install --global windows-build-tools
 ## Development
 
 ### How can I contribute?
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+See [CONTRIBUTING.md](../CONTRIBUTING.md) for guidelines.
 
 ### I found a bug, where do I report it?
-Open an issue on [GitHub Issues](https://github.com/agustin-fs/openmoba/issues) with:
+Open an issue on [GitHub Issues](https://github.com/AgustinBouzonn/open-moba-term/issues) with:
 - Clear description
 - Steps to reproduce
 - System information
@@ -130,8 +130,8 @@ Absolutely! Use the Feature Request template on GitHub Issues.
 
 ### How do I build from source?
 ```bash
-git clone https://github.com/agustin-fs/openmoba.git
-cd openmoba
+git clone https://github.com/AgustinBouzonn/open-moba-term.git
+cd open-moba-term
 npm install
 npm run dev
 ```

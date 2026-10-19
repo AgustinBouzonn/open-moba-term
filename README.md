@@ -1,163 +1,139 @@
-# OpenMoba Term 🚀
-
 <div align="center">
-  <img src="build/icon.png" alt="OpenMoba Logo" width="120" height="120" />
-  
-  <h3>The Ultimate Multi-Protocol Session Manager</h3>
-  <p>
-    Connect to everything. Manage everywhere.
-    <br />
-    <a href="#-downloads"><strong>Download Now »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/AgustinBouzonn/open-moba-term/issues/new?template=bug_report.md">Report Bug</a>
-    ·
-    <a href="https://github.com/AgustinBouzonn/open-moba-term/issues/new?template=feature_request.md">Request Feature</a>
-  </p>
+
+<img src="build/icon.png" alt="Logo de OpenMoba" width="110" height="110"/>
+
+# OpenMoba Term
+
+**Gestor de sesiones multi-protocolo: SSH, SFTP, RDP y VNC en una sola aplicación de escritorio.**
+
+[![CI](https://img.shields.io/github/actions/workflow/status/AgustinBouzonn/open-moba-term/ci.yml?branch=main&style=flat-square&label=CI)](https://github.com/AgustinBouzonn/open-moba-term/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/AgustinBouzonn/open-moba-term?style=flat-square)](https://github.com/AgustinBouzonn/open-moba-term/releases/latest)
+[![Licencia](https://img.shields.io/badge/licencia-GPL--3.0-blue?style=flat-square)](LICENSE)
+[![Plataformas](https://img.shields.io/badge/plataformas-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square)](https://github.com/AgustinBouzonn/open-moba-term/releases/latest)
+[![Electron](https://img.shields.io/badge/Electron-28-47848F?style=flat-square&logo=electron&logoColor=white)](https://www.electronjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+
+[Descargar](#descarga) · [Reportar un bug](https://github.com/AgustinBouzonn/open-moba-term/issues/new?template=bug_report.md) · [Pedir una feature](https://github.com/AgustinBouzonn/open-moba-term/issues/new?template=feature_request.md)
+
 </div>
 
 <div align="center">
-
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
-[![GitHub release](https://img.shields.io/github/release/AgustinBouzonn/open-moba-term.svg)](https://github.com/AgustinBouzonn/open-moba-term/releases/latest)
-[![Platform](https://img.shields.io/badge/platform-win%20%7C%20mac%20%7C%20linux-lightgrey)](https://github.com/AgustinBouzonn/open-moba-term/releases)
-[![Built with Electron](https://img.shields.io/badge/built%20with-Electron-orange)](https://www.electronjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://github.com/AgustinBouzonn/open-moba-term)
-[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat-square&logo=node.js&logoColor=white)](https://github.com/AgustinBouzonn/open-moba-term)
-[![Stars](https://img.shields.io/github/stars/AgustinBouzonn/open-moba-term?style=flat-square)](https://github.com/AgustinBouzonn/open-moba-term)
-[![Downloads](https://img.shields.io/github/downloads/AgustinBouzonn/open-moba-term/total?style=flat-square)](https://github.com/AgustinBouzonn/open-moba-term/releases)
-
+  <img src="docs/screenshots/main-interface.png" alt="Interfaz principal de OpenMoba" width="100%"/>
+  <sub>Sesiones SSH, RDP y VNC en una misma interfaz con pestañas.</sub>
 </div>
 
----
+## Qué es
 
-## 📖 About OpenMoba
+OpenMoba es un gestor de conexiones remotas libre y de código abierto, pensado para administradores de sistemas, developers y equipos de DevOps. Reúne en una sola app lo que normalmente requiere varias herramientas: una terminal SSH, un explorador de archivos SFTP y visores de escritorio remoto RDP y VNC.
 
-**OpenMoba** is a modern, open-source terminal and remote desktop manager designed for system administrators, developers, and DevOps engineers.
+## Características
 
-Unlike other tools that are bloated or expensive, OpenMoba offers a clean, high-performance interface to manage all your remote connections in one place. Whether you are managing a Linux server via SSH, transferring files via SFTP, fixing a Windows server via RDP, or helping a user via VNC, OpenMoba has you covered.
+| Protocolo | Qué ofrece | Implementación |
+|---|---|---|
+| **SSH** | Terminal completa con colores, copiar y pegar y redimensionado | `ssh2` + `xterm.js` |
+| **SFTP** | Explorador de archivos con subida y descarga por arrastrar y soltar | `ssh2` |
+| **RDP** | Conexión a escritorios y servidores Windows | `node-rdpjs` |
+| **VNC** | Escritorio remoto para Linux, macOS y Windows | `rfb2` |
 
-### ✨ Key Features
+- 📑 **Pestañas:** muchas conexiones abiertas a la vez.
+- 💾 **Sesiones guardadas:** conexión rápida a tus servidores habituales.
+- 🔒 **Credenciales seguras:** se guardan en el llavero del sistema operativo con `keytar` (Credential Manager en Windows, Keychain en macOS y libsecret en Linux).
+- ⚡ **Rendimiento:** los protocolos corren en un proceso aparte, así la interfaz no se congela.
 
-- **🖥️ Multi-Protocol Support**:
-  - **SSH**: Full-featured terminal with xterm.js (colors, copy/paste, resizing).
-  - **SFTP**: Built-in file manager with drag-and-drop upload/download.
-  - **RDP**: Connect to Windows servers with Remote Desktop Protocol (using `node-rdpjs`).
-  - **VNC**: Remote desktop viewing for Linux/Mac/Windows (using `rfb2`).
+## Descarga
 
-- **📑 Tabbed Interface**: Manage dozens of connections simultaneously with a sleek, chrome-like tab system.
-- **🔒 Secure by Design**: Credentials are encrypted using your OS's native keychain (Windows Credential Manager, macOS Keychain, libsecret).
-- **🎨 Modern UI**: Dark mode, beautiful typography, and responsive design powered by React.
-- **⚡ High Performance**: Built with Vite and Electron 28 for instant startup and low latency.
+Los instaladores de cada versión están en [Releases](https://github.com/AgustinBouzonn/open-moba-term/releases/latest).
 
----
+| Plataforma | Archivo | Formato |
+|---|---|---|
+| **Windows** (x64) | `OpenMoba-<versión>-Setup.exe` | Instalador NSIS |
+| **macOS** (Apple Silicon) | `OpenMoba-<versión>-arm64.dmg` | Imagen de disco |
+| **Linux** | `OpenMoba-<versión>.AppImage` | AppImage, para cualquier distro |
+| **Debian / Ubuntu** | `openmoba_<versión>_amd64.deb` | Paquete `.deb` |
 
-## 📸 Screenshots
+## Instalación
 
-<div align="center">
-  <img src="docs/screenshots/main-interface.png" alt="OpenMoba Main Interface" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.5);" />
-  <p><em>Manage SSH, RDP, and VNC sessions in a single, unified interface.</em></p>
-</div>
+**Windows.** Ejecutá el instalador. Como el binario no está firmado, SmartScreen puede mostrar una advertencia: elegí *Más información* y después *Ejecutar de todas formas*.
 
----
+**macOS.** Abrí el `.dmg` y arrastrá OpenMoba a Aplicaciones. Como la app no está notarizada, la primera vez abrila con clic derecho y *Abrir*.
 
-## 📥 Downloads
-
-OpenMoba is available for Windows, macOS, and Linux.
-
-| Platform    | Download                                                                                     | Format               |
-| ----------- | -------------------------------------------------------------------------------------------- | -------------------- |
-| **Windows** | [**Download Latest .exe**](https://github.com/AgustinBouzonn/open-moba-term/releases/latest) | Installer / Portable |
-| **Linux**   | [**Download .AppImage**](https://github.com/AgustinBouzonn/open-moba-term/releases/latest)   | AppImage / Deb       |
-| **macOS**   | [**Download .dmg**](https://github.com/AgustinBouzonn/open-moba-term/releases/latest)        | Disk Image           |
-
-### ⚡ Installation
-
-#### Windows
-
-1. Download the `.exe` installer.
-2. Run it (SmartScreen might warn you as it is unsigned, click "Run Anyway").
-3. Launch from Desktop or Start Menu.
-
-#### Linux
+**Linux.**
 
 ```bash
-chmod +x OpenMoba-1.0.0.AppImage
-./OpenMoba-1.0.0.AppImage
+# AppImage
+chmod +x OpenMoba-*.AppImage
+./OpenMoba-*.AppImage
+
+# Debian / Ubuntu
+sudo dpkg -i openmoba_*_amd64.deb
 ```
 
----
+La [guía de inicio rápido](QUICKSTART.md) explica cómo crear tu primera conexión.
 
-## 🛠️ Development Setup
+## Arquitectura
 
-Prerequisites:
+OpenMoba separa la interfaz de las conexiones en procesos distintos:
 
-- Node.js 18+
-- Git
+- **Proceso principal (Electron):** ventanas, IPC y almacenamiento seguro de credenciales.
+- **Renderer (React + Zustand):** la interfaz, la terminal `xterm.js` y los visores RDP y VNC.
+- **Worker:** ejecuta los servicios SSH, SFTP, RDP y VNC fuera de la interfaz.
+- **IPC:** el renderer y el worker se comunican por `MessageChannel`, con baja latencia y sin pasar cada mensaje por el proceso principal.
+
+```
+src/
+├── main/        Proceso principal: ventana, IPC, store y SecurityManager (keytar)
+├── preload/     Puente seguro entre el proceso principal y el renderer
+├── renderer/    Interfaz React: terminal, SFTP, visores RDP/VNC y sesiones
+└── worker/      Servicios de protocolo: ssh/, rdp/ y vnc/
+```
+
+## Desarrollo
+
+Requisitos: **Node.js 18 o superior** y Git.
 
 ```bash
-# 1. Clone the repository
 git clone https://github.com/AgustinBouzonn/open-moba-term.git
 cd open-moba-term
-
-# 2. Install dependencies (and apply patches)
-npm install
-
-# 3. Start development server
+npm install    # también aplica los parches de patches/ y recompila los módulos nativos
 npm run dev
 ```
 
-### Build from Source
+| Script | Qué hace |
+|---|---|
+| `npm run dev` | Levanta la app en modo desarrollo con Vite |
+| `npm run lint` | Corre ESLint sobre el proyecto |
+| `npm run build` | Compila y empaqueta para el sistema operativo actual |
+| `npm run build:win` / `build:mac` / `build:linux` | Empaqueta para una plataforma específica |
+| `npm run dist:dir` | Genera la app sin instalador, útil para probar el empaquetado |
 
-```bash
-# Build for your current OS
-npm run build
+Los paquetes quedan en la carpeta `release/`. En `patches/` hay ajustes a `node-rdpjs` y `rfb2` que `patch-package` aplica automáticamente al instalar.
 
-# Build for specific platform (requires admin on Windows for .exe)
-npm run build:win
-npm run build:linux
-npm run build:mac
-```
+## Documentación
 
----
+- [Guía de inicio rápido](QUICKSTART.md)
+- [Preguntas frecuentes](docs/FAQ.md)
+- [Roadmap](ROADMAP.md) y [Changelog](CHANGELOG.md)
+- [Política de seguridad](SECURITY.md)
 
-## 🏗️ Architecture
+Documentos de diseño técnico, en formato RFC. Describen la arquitectura objetivo, que puede ir más allá de lo implementado hoy:
 
-OpenMoba uses a secure, multi-process architecture:
+- [Arquitectura general](docs/MASTER_ARCHITECTURE.md) y [arquitectura del núcleo](docs/CORE_ARCHITECTURE.md)
+- [Red y SSH](docs/NETWORKING_SSH.md), [motor de terminal](docs/TERMINAL_ENGINE.md) y [SFTP y sistema de archivos virtual](docs/VFS_SFTP.md)
+- [Protocolos visuales RDP y VNC](docs/VISUAL_PROTOCOLS.md), [puente X11](docs/X11_BRIDGE.md), [persistencia](docs/PERSISTENCE.md) y [seguridad y criptografía](docs/SECURITY.md)
 
-- **Main Process**: Electron core, window management, secure storage (keytar).
-- **Renderer**: React UI, state management (Zustand), xterm.js components.
-- **Worker Threads**: Heavy protocols (SSH, RDP, VNC) run in separate Node.js worker threads to ensure the UI never freezes.
-- **IPC**: Communication via `MessageChannel` for low-latency data transfer.
+## Contribuir
 
----
+Las contribuciones son bienvenidas. Antes de empezar, leé la [guía de contribución](CONTRIBUTING.md).
 
-## 🤝 Contributing
+1. Hacé un fork del repositorio.
+2. Creá una rama para tu cambio: `git checkout -b feature/mi-cambio`.
+3. Commiteá siguiendo [Conventional Commits](https://www.conventionalcommits.org/es/): `git commit -m "feat: agrega X"`.
+4. Subí la rama y abrí un pull request.
 
-Contributions are welcome! Please check our [Contribution Guidelines](CONTRIBUTING.md).
+## Licencia
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'feat: Add some amazing feature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Distribuido bajo la licencia **GPL-3.0**. El texto completo está en [LICENSE](LICENSE).
 
----
+## Agradecimientos
 
-## ⚖️ License
-
-Distributed under the **GPL-3.0 License**. See [LICENSE](LICENSE) for more information.
-
----
-
-## 🙏 Acknowledgements
-
-- **xterm.js** - For the amazing terminal component.
-- **ssh2** - For the SSH client implementation.
-- **node-rdpjs** - For RDP protocol support.
-- **rfb2** - For VNC protocol support.
-- **Electron** - For making desktop development accessible.
-
-<div align="center">
-  <sub>Built with ❤️ by Agustin</sub>
-</div>
+[xterm.js](https://xtermjs.org/), [ssh2](https://github.com/mscdex/ssh2), [node-rdpjs](https://github.com/citronneur/node-rdpjs), [rfb2](https://github.com/sidorares/node-rfb2) y [Electron](https://www.electronjs.org/), que hacen posible este proyecto.

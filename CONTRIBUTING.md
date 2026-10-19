@@ -6,7 +6,7 @@ Thank you for your interest in contributing to OpenMoba! 🎉
 
 ### Reporting Bugs
 
-1. Check if the bug has already been reported in [Issues](https://github.com/YOUR_USERNAME/openmoba/issues)
+1. Check if the bug has already been reported in [Issues](https://github.com/AgustinBouzonn/open-moba-term/issues)
 2. If not, create a new issue with:
    - Clear title and description
    - Steps to reproduce
@@ -53,8 +53,8 @@ Thank you for your interest in contributing to OpenMoba! 🎉
 
 ```bash
 # Clone your fork
-git clone https://github.com/YOUR_USERNAME/openmoba.git
-cd openmoba
+git clone https://github.com/YOUR_USERNAME/open-moba-term.git
+cd open-moba-term
 
 # Install dependencies
 npm install
