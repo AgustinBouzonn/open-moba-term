@@ -154,7 +154,7 @@ Not yet, but it's on the roadmap.
 
 - Check the full documentation: [docs/](docs/)
 - Open a discussion on GitHub
-- Contact: [YOUR_EMAIL]
+- Report security issues privately through [GitHub Security Advisories](https://github.com/AgustinBouzonn/open-moba-term/security/advisories/new)
 
 ---
 

@@ -24,7 +24,6 @@ files:
   - "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}"
 
 asarUnpack:
-  - node_modules/node-pty/**/*
   - node_modules/keytar/**/*
 
 win:

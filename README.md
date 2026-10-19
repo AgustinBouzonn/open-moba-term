@@ -113,6 +113,7 @@ Los paquetes quedan en la carpeta `release/`. En `patches/` hay ajustes a `node-
 - [Guía de inicio rápido](QUICKSTART.md)
 - [Preguntas frecuentes](docs/FAQ.md)
 - [Roadmap](ROADMAP.md) y [Changelog](CHANGELOG.md)
+- [Proceso de release](docs/RELEASE.md)
 - [Política de seguridad](SECURITY.md)
 
 Documentos de diseño técnico, en formato RFC. Describen la arquitectura objetivo, que puede ir más allá de lo implementado hoy:
