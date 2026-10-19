@@ -7,7 +7,7 @@ This guide will get you up and running with OpenMoba in minutes!
 ### Download Pre-built Binaries
 
 **Windows:**
-1. Download `OpenMoba-1.0.0-Setup.exe` from [Releases](https://github.com/agustin-fs/openmoba/releases)
+1. Download `OpenMoba-1.0.0-Setup.exe` from [Releases](https://github.com/AgustinBouzonn/open-moba-term/releases)
 2. Run the installer
 3. Follow the setup wizard
 4. Launch OpenMoba from Start Menu
@@ -147,7 +147,7 @@ sudo dpkg -i openmoba_1.0.0_amd64.deb
 
 - Read full documentation: [docs/](docs/)
 - Join community discussions
-- Report bugs: [Issues](https://github.com/agustin-fs/openmoba/issues)
+- Report bugs: [Issues](https://github.com/AgustinBouzonn/open-moba-term/issues)
 - Contribute: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
